@@ -1,6 +1,17 @@
 spring:
   profiles:
     active: template
+  shell:
+    context:
+      close: true
+    history:
+      name: ./logs/shell-history.log
+    command:
+      quit:
+        enabled: false
+      version:
+        show-git-short-commit-id: true
+        show-git-commit-time: true
   servlet:
     multipart:
       #最大文件阈值
